@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hellodash/static/css/main.2cce8147.chunk.css",
+    "main.js": "/hellodash/static/js/main.c9447a12.chunk.js",
+    "main.js.map": "/hellodash/static/js/main.c9447a12.chunk.js.map",
+    "runtime~main.js": "/hellodash/static/js/runtime~main.e72c6626.js",
+    "runtime~main.js.map": "/hellodash/static/js/runtime~main.e72c6626.js.map",
+    "static/js/2.b41502e9.chunk.js": "/hellodash/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/hellodash/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/hellodash/index.html",
+    "precache-manifest.38dfac2a9d55279c5a99bf5bc5635fba.js": "/hellodash/precache-manifest.38dfac2a9d55279c5a99bf5bc5635fba.js",
+    "service-worker.js": "/hellodash/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/hellodash/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/hellodash/static/media/logo.5d5d9eef.svg"
+  }
+}
