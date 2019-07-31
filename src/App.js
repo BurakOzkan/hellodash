@@ -23,7 +23,7 @@ componentDidMount(){
     
     var result = {
       valid: true,
-      value: data,
+      value: JSON.stringify(this.props.temperature),
     };
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
