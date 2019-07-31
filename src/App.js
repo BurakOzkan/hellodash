@@ -34,7 +34,7 @@ componentDidMount(){
       key2: "value2"
     };
   
-    result.value = '"{"x":5,"y":6}"';
+    result.value = JSON.stringify(obj);
     
     //most probably you will call sendSubmit method
     window.JFCustomWidget.sendSubmit(result)
