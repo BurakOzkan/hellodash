@@ -25,7 +25,7 @@ componentDidUpdate(){
       var myJSON = JSON.stringify(obj);
       var result = {
         valid: true,
-        value: myJSON,
+        value: myJSON.toString(),
     };
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
