@@ -35,7 +35,7 @@ componentDidMount(){
     result.description = "my precious data"
 
     //most probably you will call sendSubmit method
-    JFCustomWidget.sendSubmit(result)
+    window.JFCustomWidget.sendSubmit(result)
   }
   )
 
