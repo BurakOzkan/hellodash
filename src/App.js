@@ -19,7 +19,25 @@ componentDidMount(){
   window.JFCustomWidget.subscribe("ready",  ()=>{
     console.log("Widget is ready");
     
-  })
+  }
+  )
+  window.JFCustomWidget.subscribe("submit",  ()=>{
+    console.log("Widget is ready");
+    var result = {}
+    //this part will be used if your field is required. If your widget is required valid
+    //property will be expected before form can be submitted
+    result.valid = true;
+    //this is your field result. You are expected to send value property as string
+    result.temperature = "my precious data"
+    result.city = "my precious data"
+    result.country = "my precious data"
+    result.humidity = "my precious data"
+    result.description = "my precious data"
+
+    //most probably you will call sendSubmit method
+    JFCustomWidget.sendSubmit(result)
+  }
+  )
 
   
 
