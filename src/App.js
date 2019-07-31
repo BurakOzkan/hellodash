@@ -29,12 +29,13 @@ componentDidMount(){
     
     result.valid = true;
     //this is your field result. You are expected to send value property as string
-    result.name = "mahmut";
-    result.value = {
+    var obj = {
       key1: "val1",
       key2: "value2"
-  };
+    };
   
+    result.value = JSON.stringify(obj);
+    
     //most probably you will call sendSubmit method
     window.JFCustomWidget.sendSubmit(result)
   }
