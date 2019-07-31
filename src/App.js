@@ -24,8 +24,8 @@ componentDidUpdate(){
  
       var result = {
         valid: true,
-        value: "yok",
-        temp: this.state.temperature
+        value: this.state.temperature,
+        
     };
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
