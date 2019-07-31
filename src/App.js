@@ -24,7 +24,11 @@ componentDidUpdate(){
  
       var result = {
         valid: true,
-        value: `CHECKED: ${this.state.temperature}\nCHECKED: ${this.state.humidity}`,
+        value: `TEMPERATURE: ${this.state.temperature}
+        \nHUMİDİTY: ${this.state.humidity}
+        \nCITY: ${this.state.city}
+        \nCOUNTRY: ${this.state.country}
+        \nCONDITION: ${this.state.description}`,
         
     };
     //this part will be used if your field is required. If your widget is required valid
