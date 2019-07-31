@@ -21,11 +21,11 @@ componentDidUpdate(){
   
   window.JFCustomWidget.subscribe("submit",  ()=>{
       
-      var obj = { name: "John", age: 30, city: "New York" };
-      var myJSON = JSON.stringify(obj);
+ 
       var result = {
         valid: true,
-        value: myJSON.toString(),
+        value: "yok",
+        temp: this.state.temperature
     };
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
