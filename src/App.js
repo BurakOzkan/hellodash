@@ -2,7 +2,6 @@ import React from "react";
 import Titles from './components/Titles'
 import Form from './components/Form'
 import Weather from './components/Weather'
-import { async } from "q";
 
 
 const OWM_API_KEY="e30d47356db578e746eb3926c4cd390e";
@@ -15,6 +14,15 @@ state = {
   humidity: undefined,
   description: undefined,
   error: undefined  
+}
+componentDidMount(){
+  window.JFCustomWidget.subscribe("ready",  ()=>{
+    console.log("Widget is ready");
+    
+  })
+
+  
+
 }
 
   getWeather = async (e) => {
@@ -47,6 +55,7 @@ state = {
 
     
   }
+  
     
 
   render(){
@@ -81,6 +90,7 @@ state = {
         
     );
   }
+
 }
 
 export default App;
