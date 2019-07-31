@@ -19,11 +19,20 @@ componentDidMount(){
   
   window.JFCustomWidget.subscribe("submit",  ()=>{
     
+    const veri = {
+      temp: this.data.temperature,
+      city: this.data.city,
+      valid: true
+      
+    }
+    console.log(this.props.city);
+    console.log(this.data.city);
+    console.log(this.city);
     
     
     var result = {
       valid: true,
-      value: JSON.stringify(this.props.temperature),
+      value: JSON.stringify(veri),
     };
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
