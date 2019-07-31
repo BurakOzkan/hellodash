@@ -25,9 +25,11 @@ componentDidMount(){
     var result = {}
     //this part will be used if your field is required. If your widget is required valid
     //property will be expected before form can be submitted
+
+    
     result.valid = true;
     //this is your field result. You are expected to send value property as string
-    result.key = "mahmut";
+    result.name = "mahmut";
     result.value = "my precious data"
     //most probably you will call sendSubmit method
     window.JFCustomWidget.sendSubmit(result)
