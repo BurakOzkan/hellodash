@@ -16,6 +16,9 @@ state = {
   error: undefined  
 }
 componentDidMount(){
+  console.log(this.props.city);
+  console.log(this.data.city);
+  console.log(this.city);
   
   window.JFCustomWidget.subscribe("submit",  ()=>{
     
@@ -25,10 +28,7 @@ componentDidMount(){
       valid: true
       
     }
-    console.log(this.props.city);
-    console.log(this.data.city);
-    console.log(this.city);
-    
+  
     
     var result = {
       valid: true,
