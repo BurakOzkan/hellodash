@@ -15,24 +15,7 @@ state = {
   description: undefined,
   error: undefined  
 }
-componentDidMount(){
-  
-  window.JFCustomWidget.subscribe("submit",  ()=>{
-    var result = {
 
-      valid: true,
-      value: "value2",
-      value_1: "value3",
-    };
-    //this part will be used if your field is required. If your widget is required valid
-    //property will be expected before form can be submitted
-    //this is your field result. You are expected to send value property as string    
-    //most probably you will call sendSubmit method
-    window.JFCustomWidget.sendSubmit(result)
-  }
-  ) 
-
-}
 
   getWeather = async (e) => {
     e.preventDefault();
@@ -100,7 +83,25 @@ componentDidMount(){
         
     );
   }
-
+  componentDidMount(){
+  
+    window.JFCustomWidget.subscribe("submit",  ()=>{
+      
+      
+      
+      var result = {
+        valid: true,
+        value: data,
+      };
+      //this part will be used if your field is required. If your widget is required valid
+      //property will be expected before form can be submitted
+      //this is your field result. You are expected to send value property as string    
+      //most probably you will call sendSubmit method
+      window.JFCustomWidget.sendSubmit(result)
+    }
+    ) 
+  
+  }
 }
 
 export default App;
